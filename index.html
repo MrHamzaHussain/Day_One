@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Encoder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="messageForm">
+        <label for="plainText">Plain Text Message:</label><br>
+        <input type="text" id="plainText" name="plainText" placeholder="Enter your message" required><br><br>
+
+        <label for="codingMechanism">Coding Mechanism:</label><br>
+        <select id="codingMechanism" name="codingMechanism">
+            <option value="caesar">Caesar Cipher</option>
+            <option value="morse">Morse Code</option>
+        </select><br><br>
+
+        <button type="button" onclick="encryptMessage()">Encrypt Message</button><br><br>
+        <button type="button" onclick="decryptMessage()">Decrypt Message</button><br><br>
+
+        <label for="resultMessage">Result Message:</label><br>
+        <textarea id="resultMessage" name="resultMessage" rows="4" cols="50" readonly></textarea>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
